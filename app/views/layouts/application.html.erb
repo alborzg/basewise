@@ -12,6 +12,12 @@
   <%= render "shared/top_nav" %>
 </div>
 
+<div class="flash">
+  <% if flash[:notice]%>
+      <%= flash[:notice]%>
+  <%end%>
+</div>
+
 <div class="main-content">
   <%= yield %>
 </div>

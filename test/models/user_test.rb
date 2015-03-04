@@ -116,7 +116,7 @@ class UserTest < ActiveSupport::TestCase
         end
 
         should "return the user" do
-          assert_not @user, User.authenticate(email: @user.email, password: @user.password)
+          assert_equal @user, User.authenticate(email: @user.email, password: @user.password)
         end
       end
 

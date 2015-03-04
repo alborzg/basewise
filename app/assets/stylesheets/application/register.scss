@@ -1,0 +1,13 @@
+// Place all the styles related to the register controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_user {
+  @include span-columns(4 of 12);
+  @include shift(4 of 12);
+  @include border-radius($base-border-radius)
+
+  margin-top: 100 px;
+  background-color: $white;
+  padding: 15px;
+}
